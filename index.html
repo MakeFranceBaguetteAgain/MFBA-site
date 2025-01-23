@@ -10,18 +10,18 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to right, #0055A4, #FFFFFF, #EF4135); /* Dégradé bleu-blanc-rouge */
+            background: linear-gradient(to right, #0069B6, #F5F5F5, #E63946); /* Dégradé plus subtil de bleu à rouge */
             color: #333;
             text-align: center;
         }
         header {
-            background-color: #0055A4;
+            background-color: #0069B6;
             color: white;
             padding: 20px 0;
         }
         header h1 {
             margin: 0;
-            font-size: 1em;
+            font-size: 3em;
             font-family: 'Helvetica', sans-serif; /* Police moderne pour le titre */
         }
         main {
@@ -36,15 +36,30 @@
         #token-ca {
             margin: 20px 0;
             font-size: 1.5em;
-            color: #0055A4;
+            color: #0069B6;
             font-weight: bold;
+        }
+        .icon-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+        .icon-btn {
+            width: 60px;
+            height: 60px;
+            transition: transform 0.3s ease;
+        }
+        .icon-btn:hover {
+            transform: scale(1.2);
         }
         .link-row {
             margin-top: 20px;
         }
         .link-row a {
             font-size: 1.2em;
-            color: #0055A4;
+            color: #0069B6;
             text-decoration: none;
             margin: 10px;
             display: inline-block;
@@ -55,7 +70,7 @@
         footer {
             margin-top: 40px;
             padding: 20px;
-            background-color: #0055A4;
+            background-color: #0069B6;
             color: white;
             font-size: 0.9em;
         }
@@ -71,14 +86,27 @@
         <p>The revolutionary token bringing baguettes back to the heart of France!</p>
         
         <!-- Token CA -->
-        <div id="token-ca">CA: Waiting for data...</div>
+        <div id="token-ca">Token on Solana: <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Solana_logo.svg" alt="Solana Logo" style="width: 30px; height: 30px;"> Solana</div>
         
         <!-- Liens vers les plateformes -->
         <div class="link-row">
-            <a href="https://twitter.com/MFBA" target="_blank">Twitter (X)</a>
-            <a href="https://t.me/MFBA" target="_blank">Telegram</a>
-            <a href="https://dexscreener.com/" target="_blank">DexScreener</a>
-            <a href="https://jup.ag/swap" target="_blank">Jupiter</a>
+            <a href="https://twitter.com/MFBA" target="_blank">
+                <img class="icon-btn" src="https://upload.wikimedia.org/wikipedia/commons/6/60/X_Logo_2023.svg" alt="Twitter (X)">
+            </a>
+            <a href="https://t.me/MFBA" target="_blank">
+                <img class="icon-btn" src="https://upload.wikimedia.org/wikipedia/commons/2/28/Telegram_logo.svg" alt="Telegram">
+            </a>
+            <a href="https://dexscreener.com/" target="_blank">
+                <img class="icon-btn" src="https://dexscreener.com/favicon.ico" alt="DexScreener">
+            </a>
+            <a href="https://jup.ag/swap" target="_blank">
+                <img class="icon-btn" src="https://jup.ag/favicon.ico" alt="Jupiter">
+            </a>
+        </div>
+
+        <!-- Trade on Jupiter -->
+        <div class="link-row">
+            <p><a href="https://jup.ag/swap" target="_blank">Trade on Jupiter</a></p>
         </div>
     </main>
     <footer>
