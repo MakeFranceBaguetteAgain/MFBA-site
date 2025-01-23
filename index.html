@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,9 +31,25 @@
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
             margin-top: 20px;
         }
-        .btn {
+        .icon-btn {
             display: inline-block;
-            margin: 20px auto;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 50%;
+            background-color: white;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        .icon-btn img {
+            width: 40px;
+            height: 40px;
+        }
+        .icon-btn:hover {
+            transform: scale(1.1);
+        }
+        .token-btn {
+            display: inline-block;
+            margin-top: 20px;
             padding: 10px 20px;
             background-color: #EF4135;
             color: white;
@@ -43,7 +59,7 @@
             border-radius: 5px;
             transition: background-color 0.3s ease;
         }
-        .btn:hover {
+        .token-btn:hover {
             background-color: #D9372F;
         }
         footer {
@@ -61,16 +77,19 @@
     </header>
     <main>
         <img src="IMG_2626.jpeg" alt="Image MFBA">
-        <p>Bienvenue sur le site officiel de Make France Baguette Again !</p>
+        <p>Welcome to the official Make France Baguette Again website!</p>
+        <p>The revolutionary token bringing baguettes back to the heart of France!</p>
+        
+        <!-- Telegram Icon -->
+        <a href="https://t.me/MFBA" class="icon-btn" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram">
+        </a>
+
+        <!-- Twitter Icon -->
+        <a href="https://twitter.com/MFBA" class="icon-btn" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/X_logo_2023.svg" alt="Twitter">
+        </a>
+
+        <!-- DexScreener Link -->
         <p>
-            Le jeton révolutionnaire qui remet les baguettes au cœur de la France !
-        </p>
-        <a href="https://t.me/MFBA" class="btn" target="_blank">📢 Rejoignez notre canal Telegram</a>
-        <a href="https://twitter.com/MFBA" class="btn" target="_blank">🐦 Suivez-nous sur Twitter</a>
-        <a href="<votre-lien-token>" class="btn" target="_blank">🔗 Voir le jeton MFBA</a>
-    </main>
-    <footer>
-        <p>&copy; 2025 Make France Baguette Again. Tous droits réservés.</p>
-    </footer>
-</body>
-</html>
+            <a href="
