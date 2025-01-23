@@ -9,9 +9,18 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to right, #0055A4, #FFFFFF, #EF4135);
+            background: linear-gradient(to bottom, #0055A4, #FFFFFF, #EF4135);
             color: #333;
             text-align: center;
+        }
+        header {
+            background-color: #0055A4;
+            color: white;
+            padding: 20px 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
         }
         main {
             padding: 20px;
@@ -21,6 +30,12 @@
             border-radius: 15px;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
             margin-top: 20px;
+        }
+        #token-ca {
+            margin: 20px 0;
+            font-size: 1.5em;
+            color: #0055A4;
+            font-weight: bold;
         }
         .icon-row {
             display: flex;
@@ -37,36 +52,52 @@
         .icon-btn:hover {
             transform: scale(1.2);
         }
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #0055A4;
+            color: white;
+            font-size: 0.9em;
+        }
     </style>
 </head>
 <body>
+    <header>
+        <h1>Make France Baguette Again 🥖</h1>
+    </header>
     <main>
-        <img src="IMG_2626.jpeg" alt="Image MFBA" style="max-width: 100%; height: auto;">
-        <p>Bienvenue sur le site officiel de Make France Baguette Again !</p>
-        <p>Le token révolutionnaire qui remet les baguettes au cœur de la France !</p>
+        <img src="IMG_2626.jpeg" alt="Image MFBA">
+        <p>Welcome to the official Make France Baguette Again website!</p>
+        <p>The revolutionary token bringing baguettes back to the heart of France!</p>
         
-        <!-- Liens vers les plateformes -->
+        <!-- Token CA -->
+        <div id="token-ca">CA: Waiting for data...</div>
+        
+        <!-- Icons Row -->
         <div class="icon-row">
-            <!-- Icône X (Twitter) -->
-            <a href="https://x.com/MFBA" target="_blank">
-                <img class="icon-btn" src="chemin/vers/icône-twitter.svg" alt="X (Twitter)">
+            <!-- X (Twitter) Icon -->
+            <a href="https://twitter.com/MFBA" target="_blank">
+                <img class="icon-btn" src="https://cdn-icons-png.flaticon.com/512/3670/3670151.png" alt="Twitter (X)">
             </a>
 
-            <!-- Icône Telegram -->
+            <!-- Telegram Icon -->
             <a href="https://t.me/MFBA" target="_blank">
-                <img class="icon-btn" src="chemin/vers/icône-telegram.svg" alt="Telegram">
+                <img class="icon-btn" src="https://cdn-icons-png.flaticon.com/512/906/906377.png" alt="Telegram">
             </a>
 
-            <!-- Icône DexScreener -->
+            <!-- DexScreener Icon -->
             <a href="https://dexscreener.com/" target="_blank">
-                <img class="icon-btn" src="chemin/vers/icône-dexscreener.svg" alt="DexScreener">
+                <img class="icon-btn" src="https://dexscreener.com/favicon.ico" alt="DexScreener">
             </a>
 
-            <!-- Icône Jupiter -->
+            <!-- Jupiter Icon -->
             <a href="https://jup.ag/swap" target="_blank">
-                <img class="icon-btn" src="chemin/vers/icône-jupiter.svg" alt="Jupiter">
+                <img class="icon-btn" src="https://jup.ag/favicon.ico" alt="Jupiter">
             </a>
         </div>
     </main>
+    <footer>
+        <p>&copy; 2025 Make France Baguette Again. All rights reserved.</p>
+    </footer>
 </body>
 </html>
